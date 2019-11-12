@@ -30,5 +30,10 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.urbanist.template.feature.main.MainFragment"
-        android:label="MainFragment" />
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_authFragment2"
+            app:destination="@id/authFragment"
+            app:popUpTo="@+id/navigation_global" />
+    </fragment>
 </navigation>

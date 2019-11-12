@@ -1,7 +1,7 @@
 package com.urbanist.template.feature.splash.presentation.di
 
 import androidx.lifecycle.ViewModelProvider
-import com.memebattle.memes.mvvm.viewmodel.ViewModelFactory
+import com.urbanist.template.core.di.presentation.viewmodel.ViewModelFactory
 import com.urbanist.template.core.di.di.scope.FragmentScope
 import com.urbanist.template.feature.splash.domain.AuthorizedUseCase
 import com.urbanist.template.feature.splash.domain.di.AuthorizedUseCaseModule
@@ -19,10 +19,10 @@ class SplashFragmentModule {
 		owner: SplashFragment,
 		authorizedUseCase: AuthorizedUseCase
 	): SplashViewModel = ViewModelFactory {
-		SplashViewModel(
-			authorizedUseCase
-		)
-	}.let { viewModelFactory ->
+        SplashViewModel(
+            authorizedUseCase
+        )
+    }.let { viewModelFactory ->
 		ViewModelProvider(owner, viewModelFactory)[SplashViewModel::class.java]
 	}
 }

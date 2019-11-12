@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.memebattle.memes.mvvm.fragment.BaseFragment
+import com.urbanist.template.core.di.navigation.NavHost
+import com.urbanist.template.core.di.navigation.navigate
+import com.urbanist.template.core.di.presentation.fragment.BaseFragment
 import com.urbanist.template.feature.settings.R
 import com.urbanist.template.feature.settings.databinding.FragmentSettingsBinding
 import com.urbanist.template.feature.settings.presentation.navigation.SettingsNavCommandProvider
@@ -14,6 +16,9 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(),
     SettingsViewModel.EventsListener {
 
 	override val layoutId: Int = R.layout.fragment_settings
+
+	@Inject
+	lateinit var globalHost: NavHost
 
 	@Inject
 	lateinit var navCommandProvider: SettingsNavCommandProvider
@@ -30,5 +35,12 @@ class SettingsFragment : BaseFragment<FragmentSettingsBinding>(),
 		viewModel.eventsDispatcher.bind(this, this)
 		binding.viewModel = viewModel
 		return view
+	}
+
+	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+		super.onViewCreated(view, savedInstanceState)
+		binding.signOut.setOnClickListener {
+			navigate(navCommandProvider.toAuth, globalHost.id)
+		}
 	}
 }

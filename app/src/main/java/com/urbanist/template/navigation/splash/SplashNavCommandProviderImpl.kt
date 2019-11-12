@@ -1,6 +1,6 @@
 package com.urbanist.template.navigation.splash
 
-import com.memebattle.memes.navigation.NavCommand
+import com.urbanist.template.core.di.navigation.NavCommand
 import com.urbanist.template.R
 import com.urbanist.template.feature.splash.presentation.navigation.SplashNavCommandProvider
 import javax.inject.Inject

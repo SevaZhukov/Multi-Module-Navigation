@@ -1,6 +1,6 @@
 package com.urbanist.template.navigation.host
 
-import com.memebattle.memes.navigation.NavHost
+import com.urbanist.template.core.di.navigation.NavHost
 import com.urbanist.template.R
 import dagger.Module
 import dagger.Provides

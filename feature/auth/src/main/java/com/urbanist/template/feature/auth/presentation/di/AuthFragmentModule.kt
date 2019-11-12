@@ -1,7 +1,7 @@
 package com.urbanist.template.feature.auth.presentation.di
 
 import androidx.lifecycle.ViewModelProvider
-import com.memebattle.memes.mvvm.viewmodel.ViewModelFactory
+import com.urbanist.template.core.di.presentation.viewmodel.ViewModelFactory
 import com.urbanist.template.core.di.di.scope.FragmentScope
 import com.urbanist.template.feature.auth.domain.signin.SignInUseCase
 import com.urbanist.template.feature.auth.domain.di.AuthUseCaseModule
@@ -21,11 +21,11 @@ class AuthFragmentModule {
 		signInUseCase: SignInUseCase,
 		signUpUseCase: SignUpUseCase
 	): AuthViewModel = ViewModelFactory {
-		AuthViewModel(
-			signInUseCase,
-			signUpUseCase
-		)
-	}.let { viewModelFactory ->
+        AuthViewModel(
+            signInUseCase,
+            signUpUseCase
+        )
+    }.let { viewModelFactory ->
 		ViewModelProvider(owner, viewModelFactory)[AuthViewModel::class.java]
 	}
 }

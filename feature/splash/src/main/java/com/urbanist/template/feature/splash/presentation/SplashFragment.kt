@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.memebattle.memes.mvvm.fragment.BaseFragment
-import com.memebattle.memes.navigation.navigate
+import com.urbanist.template.core.di.navigation.navigate
+import com.urbanist.template.core.di.presentation.fragment.BaseFragment
 import com.urbanist.template.feature.splash.R
 import com.urbanist.template.feature.splash.databinding.FragmentSplashBinding
 import com.urbanist.template.feature.splash.presentation.navigation.SplashNavCommandProvider

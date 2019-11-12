@@ -16,9 +16,12 @@ class MainFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_main, container)
+        return inflater.inflate(R.layout.fragment_main, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val navController = Navigation.findNavController(requireActivity(), R.id.host_main)
         NavigationUI.setupWithNavController(bottomNavigationView, navController)
-        return view
+        super.onViewCreated(view, savedInstanceState)
     }
 }

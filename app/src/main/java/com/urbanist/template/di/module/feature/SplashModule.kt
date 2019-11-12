@@ -4,5 +4,5 @@ import com.urbanist.template.navigation.host.GlobalHostModule
 import com.urbanist.template.navigation.splash.di.SplashNavigationModule
 import dagger.Module
 
-@Module(includes = [SplashNavigationModule::class, GlobalHostModule::class])
+@Module(includes = [SplashNavigationModule::class])
 interface SplashModule

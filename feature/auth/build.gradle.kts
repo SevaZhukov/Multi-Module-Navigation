@@ -40,9 +40,5 @@ dependencies {
 
     implementation(Dependencies.NAVIGATION)
 
-    implementation(project(Modules.MEMES_MVVM))
-    implementation(project(Modules.MEMES_NAVIGATION))
-    implementation(project(Modules.MEMES_UTILS))
-
     implementation(project(Modules.CORE))
 }

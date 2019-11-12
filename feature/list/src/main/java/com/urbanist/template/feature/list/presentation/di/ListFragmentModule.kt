@@ -1,7 +1,7 @@
 package com.urbanist.template.feature.list.presentation.di
 
 import androidx.lifecycle.ViewModelProvider
-import com.memebattle.memes.mvvm.viewmodel.ViewModelFactory
+import com.urbanist.template.core.di.presentation.viewmodel.ViewModelFactory
 import com.urbanist.template.core.di.di.scope.FragmentScope
 import com.urbanist.template.feature.list.presentation.ListFragment
 import com.urbanist.template.feature.list.presentation.ListViewModel
@@ -19,7 +19,7 @@ class ListFragmentModule {
         ListViewModel(
 
         )
-	}.let { viewModelFactory ->
+    }.let { viewModelFactory ->
 		ViewModelProvider(owner, viewModelFactory)[ListViewModel::class.java]
 	}
 }

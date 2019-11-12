@@ -3,13 +3,16 @@
 
     <item
         android:id="@+id/listFragment"
+        android:icon="@drawable/ic_android_black_24dp"
         android:title="@string/list_title" />
 
     <item
         android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_android_black_24dp"
         android:title="@string/profile_title" />
 
     <item
         android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_android_black_24dp"
         android:title="@string/settings_title" />
 </menu>

@@ -65,7 +65,4 @@ dependencies {
 	implementation(Dependencies.NAVIGATION_UI)
 
 	implementation(Dependencies.FIREBASE_AUTH)
-
-	implementation(project(Modules.MEMES_NAVIGATION))
-	implementation(project(Modules.MEMES_MVVM))
 }

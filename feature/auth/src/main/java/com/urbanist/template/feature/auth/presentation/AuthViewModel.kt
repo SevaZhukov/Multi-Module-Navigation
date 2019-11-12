@@ -1,10 +1,10 @@
 package com.urbanist.template.feature.auth.presentation
 
 import androidx.lifecycle.MutableLiveData
-import com.memebattle.memes.mvvm.eventsdispatcher.EventsDispatcher
-import com.memebattle.memes.mvvm.eventsdispatcher.EventsDispatcherOwner
-import com.memebattle.memes.mvvm.viewmodel.BaseViewModel
-import com.memebattle.memes.utils.ext.addTo
+import com.urbanist.template.core.di.presentation.events.EventsDispatcher
+import com.urbanist.template.core.di.presentation.events.EventsDispatcherOwner
+import com.urbanist.template.core.di.presentation.viewmodel.BaseViewModel
+import com.urbanist.template.core.di.presentation.viewmodel.addTo
 import com.urbanist.template.feature.auth.domain.signin.SignInUseCase
 import com.urbanist.template.feature.auth.domain.signup.SignUpUseCase
 import javax.inject.Inject
@@ -12,9 +12,11 @@ import javax.inject.Inject
 class AuthViewModel @Inject constructor(
 	private val signInUseCase: SignInUseCase,
 	private val signUpUseCase: SignUpUseCase
-) : BaseViewModel(), EventsDispatcherOwner<AuthViewModel.EventsListener> {
+) : BaseViewModel(),
+	EventsDispatcherOwner<AuthViewModel.EventsListener> {
 
-	override val eventsDispatcher: EventsDispatcher<EventsListener> = EventsDispatcher()
+	override val eventsDispatcher: EventsDispatcher<EventsListener> =
+		EventsDispatcher()
 
 	val email = MutableLiveData<String>()
 	val password = MutableLiveData<String>()

@@ -45,9 +45,6 @@ dependencies {
     kapt(Dependencies.DAGGER_COMPILER)
     kapt(Dependencies.DAGGER_ANDROID_PROCESSOR)
 
-    implementation(project(Modules.MEMES_MVVM))
-    implementation(project(Modules.MEMES_NAVIGATION))
-
     implementation(project(Modules.FEATURE_SPLASH))
     implementation(project(Modules.FEATURE_AUTH))
     implementation(project(Modules.FEATURE_MAIN))

@@ -35,6 +35,4 @@ dependencies {
 	implementation(project(Modules.FEATURE_SETTINGS))
 	implementation(project(Modules.FEATURE_PROFILE))
 	implementation(project(Modules.FEATURE_LIST))
-
-	implementation(project(Modules.MEMES_NAVIGATION))
 }
