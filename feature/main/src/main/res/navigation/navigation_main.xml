@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_main"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.urbanist.template.feature.settings.presentation.SettingsFragment"
+        android:label="SettingsFragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.urbanist.template.feature.profile.presentation.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.urbanist.template.feature.list.presentation.ListFragment"
+        android:label="ListFragment" />
+</navigation>

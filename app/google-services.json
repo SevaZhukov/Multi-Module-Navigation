@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "968356977589",
+    "firebase_url": "https://template-9b2a0.firebaseio.com",
+    "project_id": "template-9b2a0",
+    "storage_bucket": "template-9b2a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968356977589:android:e62a8a348d203039ff97fc",
+        "android_client_info": {
+          "package_name": "com.urbanist.template"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968356977589-q742ckq9523nmp2bisebpv3g7dj1vj7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.urbanist.template",
+            "certificate_hash": "941f4ca8f1443a578fe7bd2608364ab03afb9cbc"
+          }
+        },
+        {
+          "client_id": "968356977589-8sgreukcheeagol8sfrjomqc2q90ru48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5jcdzNymk1a7soXI9Tf-AFu9lwwPy5zg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968356977589-8sgreukcheeagol8sfrjomqc2q90ru48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

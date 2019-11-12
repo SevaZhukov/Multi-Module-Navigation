@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Пароль</string>
+    <string name="auth_title">Авторизация</string>
+    <string name="signIn_button">Вход</string>
+    <string name="signUp_button">Регистрация</string>
+</resources>
